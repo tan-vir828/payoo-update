@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-   <h1>hi</h1>
+
+<body class="bg-slate-800 ">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+
+        <nav class="flex justify-around">
+            <div class="flex">
+                <div>
+                    <img class="" src="/assets/Group.png" alt="">
+                </div>
+
+                <div class="flex flex-col items-start mt-4 ml-3">
+                    <h1 class="font-extrabold">$1000</h1>
+                    <p class="text-slate-500"> Balance</p>
+                </div>
+            </div>
+
+
+            <div class="btn mt-4">
+                <button>Logout</button>
+                <img class="w-8 h-7" src="./assets/logout.png" alt="">
+            </div>
+
+
+        </nav>
+
+
+        <section class=" m-4 ">
+
+            <div class="mt-10">
+                <p class="font-bold">🔥 Welcome to Payooo!</p>
+                <p class="text-stone-600 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is
+                    low and </p>
+            </div>
+
+
+        </section>
+
+        <!-- box -->
+
+
+        <section class="cards grid grid-cols-3 gap-3 m-3 mt-10">
+            <div class="box hover:bg-[#3E8EDE] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+                <img class="w-6 h-6" src="./assets/add money.png" alt="">
+                <p>Add Money</p>
+            </div>
+           
+            <div class="box hover:bg-[#40E0D0] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+                <img class="w-6 h-6" src="./assets/cashout.png" alt="">
+                <p>Cashout</p>
+            </div>
+           
+            <div class="box hover:bg-[#00FFFF] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+                <img class="w-6 h-6" src="./assets/transfer.png" alt="">
+                <p>Transfer</p>
+            </div>
+           
+            <div class="box hover:bg-[#81D8D0] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+                <img class="w-6 h-6" src="./assets/bonus1.png" alt="">
+                <p>Get Bonus</p>
+            </div>
+           
+            <div class="box hover:bg-[#4B9CD3] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg ">
+                <img class="w-6 h-6" src="./assets/paybill.png" alt="">
+                <p>Pay Bill</p>
+            </div>
+           
+            <div class="box hover:bg-[#1ca9c9] hover:scale-105 transition-all duration-300 cursor-pointer  border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+                <img class="w-6 h-6" src="./assets/transaction1.png" alt="">
+                <p>Transactions</p>
+            </div>
+           
+        </section>
+ <section id="addmoney" class="">
+            <h2>Add money</h2>
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                  <div class="card-body">
+                    <legend>Select Bank</legend>
+                    <select id="allbank" class="select">
+                      <option disabled selected>Select bank</option>
+                      <option value="Bkash">Bkash</option>
+                      <option value="Nagad">nagad</option>
+                      <option value="dbbl">DBBL</option>
+                    </select>
+                    <fieldset class="fieldset">
+                      <label class="fieldset-label">Acount number</label>
+                      <input
+                        value="01301301302"
+                        id="Acount-nunber"
+                        type="number"
+                        maxlength="11"
+                        class="input"
+                        placeholder="type your  number"
+                        required
+                      />
+                      <label class="fieldset-label">Amount </label>
+                      <input
+                        id="amount"
+                        type="number"
+                        maxlength="11"
+                        class="input"
+                        placeholder="type your  Amount"
+                        required
+                      />
+                      <label class="fieldset-label">PIN</label>
+                      <input
+                        value="1234"
+                        id="pin"
+                        type="text"
+                        class="input"
+                        placeholder="type your PIN"
+                        required
+                      />
+                 
+                      <button
+                        id="add-money"
+                        type="submit"
+                        id="login-btn"
+                        class="btn btn-neutral bg-blue-700 mt-4"
+                      >
+                        Add money
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+    </section>
 </body>
+
 </html>
