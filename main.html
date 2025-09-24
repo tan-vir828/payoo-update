@@ -49,99 +49,84 @@
 
 
         <section class="cards grid grid-cols-3 gap-3 m-3 mt-10">
-            <div class="box hover:bg-[#3E8EDE] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+            <div
+                class="box hover:bg-[#3E8EDE] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
                 <img class="w-6 h-6" src="./assets/add money.png" alt="">
                 <p>Add Money</p>
             </div>
-           
-            <div class="box hover:bg-[#40E0D0] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+
+            <div
+                class="box hover:bg-[#40E0D0] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
                 <img class="w-6 h-6" src="./assets/cashout.png" alt="">
                 <p>Cashout</p>
             </div>
-           
-            <div class="box hover:bg-[#00FFFF] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+
+            <div
+                class="box hover:bg-[#00FFFF] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
                 <img class="w-6 h-6" src="./assets/transfer.png" alt="">
                 <p>Transfer</p>
             </div>
-           
-            <div class="box hover:bg-[#81D8D0] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+
+            <div
+                class="box hover:bg-[#81D8D0] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
                 <img class="w-6 h-6" src="./assets/bonus1.png" alt="">
                 <p>Get Bonus</p>
             </div>
-           
-            <div class="box hover:bg-[#4B9CD3] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg ">
+
+            <div
+                class="box hover:bg-[#4B9CD3] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg ">
                 <img class="w-6 h-6" src="./assets/paybill.png" alt="">
                 <p>Pay Bill</p>
             </div>
-           
-            <div class="box hover:bg-[#1ca9c9] hover:scale-105 transition-all duration-300 cursor-pointer  border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
+
+            <div
+                class="box hover:bg-[#1ca9c9] hover:scale-105 transition-all duration-300 cursor-pointer  border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg  ">
                 <img class="w-6 h-6" src="./assets/transaction1.png" alt="">
                 <p>Transactions</p>
             </div>
-           
+
         </section>
- <section id="addmoney" class="">
+        <section id="addmoney" class="">
             <h2>Add money</h2>
             <div class="">
-              <div class="hero-content flex-col lg:flex-row-reverse">
-                <div class="card w-full max-w-sm shrink-0 shadow-2xl">
-                  <div class="card-body">
-                    <legend>Select Bank</legend>
-                    <select id="allbank" class="select">
-                      <option disabled selected>Select bank</option>
-                      <option value="Bkash">Bkash</option>
-                      <option value="Nagad">nagad</option>
-                      <option value="dbbl">DBBL</option>
-                    </select>
-                    <fieldset class="fieldset">
-                      <label class="fieldset-label">Acount number</label>
-                      <input
-                        value="01301301302"
-                        id="Acount-nunber"
-                        type="number"
-                        maxlength="11"
-                        class="input"
-                        placeholder="type your  number"
-                        required
-                      />
-                      <label class="fieldset-label">Amount </label>
-                      <input
-                        id="amount"
-                        type="number"
-                        maxlength="11"
-                        class="input"
-                        placeholder="type your  Amount"
-                        required
-                      />
-                      <label class="fieldset-label">PIN</label>
-                      <input
-                        value="1234"
-                        id="pin"
-                        type="text"
-                        class="input"
-                        placeholder="type your PIN"
-                        required
-                      />
-                 
-                      <button
-                        id="add-money"
-                        type="submit"
-                        id="login-btn"
-                        class="btn btn-neutral bg-blue-700 mt-4"
-                      >
-                        Add money
-                      </button>
-                    </fieldset>
-                  </div>
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <legend>Select Bank</legend>
+                            <select id="allbank" class="select">
+                                <option disabled selected>Select bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">nagad</option>
+                                <option value="dbbl">DBBL</option>
+                            </select>
+                            <fieldset class="fieldset">
+                                <label class="fieldset-label">Acount number</label>
+                                <input value="01301301302" id="Acount-nunber" type="number" maxlength="11" class="input"
+                                    placeholder="type your  number" required />
+                                <label class="fieldset-label">Amount </label>
+                                <input id="amount" type="number" maxlength="11" class="input"
+                                    placeholder="type your  Amount" required />
+                                <label class="fieldset-label">PIN</label>
+                                <input value="1234" id="pin" type="text" class="input" placeholder="type your PIN"
+                                    required />
+
+                                <button id="add-money" type="submit" id="login-btn"
+                                    class="btn btn-neutral bg-blue-700 mt-4">
+                                    Add money
+                                </button>
+                            </fieldset>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </section>
+        </section>
 
 
 
 
     </section>
+
+    <script src="./SCRIPT/addmoney.js"></script>
 </body>
 
 </html>
