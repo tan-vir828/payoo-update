@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+
+    <!-- DaisyUI + Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-400">
+    <section class="min-h-screen flex flex-col items-center justify-center px-4 bg-gray-300">
+
+        <!-- Navbar -->
+        <header class="">
+            <nav class="flex justify-center items-center">
+                <nav class="flex justify-center items-center mt-10">
+                    <div class=" relative flex justify-center items-center ">
+                        <img class=" absolute " src="assets/bg.png" alt="">
+                        <img class="" src="assets/Group.png" alt="">
+                    </div>
+
+                </nav>
+
+            </nav>
+        </header>
+
+        <!-- Login -->
+        <div class="mt-6 w-full flex justify-center">
+            <div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+                <div class="card-body">
+                    <h1 class="text-2xl font-bold text-center mb-4">Login now!</h1>
+                    <fieldset class="fieldset">
+                        <label class="label font-extrabold">Mobile Number</label>
+                        <input type="number" class="input input-bordered w-full" placeholder="Enter Your Number" />
+                        <label class="label font-extrabold">4 Digit Pin</label>
+                        <input type="password" maxlength="4" class="input input-bordered w-full"
+                            placeholder="Enter Your Pin" />
+                        <button id="login-btn" class="btn btn-neutral mt-6 bg-[#0874F2] rounded-2xl w-full">Login</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
