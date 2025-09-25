@@ -20,7 +20,7 @@
         </div>
 
         <div class="flex flex-col items-start mt-4 ml-3">
-          <h1 class="font-extrabold">$ <span id="main-balance">0</span></h1>
+          <h1 class="font-extrabold">$ <span id="main-balance">9000</span></h1>
           <p class="text-slate-500"> Balance</p>
         </div>
       </div>
@@ -125,16 +125,16 @@
                 <option value="dbbl">DBBL</option>
               </select>
               <fieldset class="fieldset">
-                <label class="fieldset-label">Account number</label>
+                <label class="fieldset-label">Agent Number</label>
                 <input value="01301301302" id="Acount-nunber2" type="number" maxlength="11" class="input"
                   placeholder="type your number" required />
                 <label class="fieldset-label">Amount </label>
-                <input id="amount2" type="number" maxlength="11" class="input" placeholder="type your Amount" required />
+                <input id="cashout-amount" type="number" maxlength="11" class="input" placeholder="Enter amount to withdraw" required />
                 <label class="fieldset-label">PIN</label>
-                <input value="1234" id="pin2" type="text" class="input" placeholder="type your PIN" required />
+                <input value="1234" id="cashout-pin" type="text" class="input" placeholder="Enter 4 digit pin number" required />
 
-                <button id="cash-out" type="submit"
-                  class="btn btn-neutral bg-blue-700 mt-4">Cashout</button>
+                <button id="cash-out-btn" type="submit"
+                  class="btn btn-neutral bg-blue-700 mt-4 rounded-2xl">Withdraw Money</button>
               </fieldset>
             </div>
           </div>
@@ -146,6 +146,8 @@
 
   <script src="./SCRIPT/addmoney.js"></script>
   <script src="./SCRIPT/toogle.js"></script>
+  <script src="./SCRIPT/cashout.js"></script>
+
 </body>
 
 </html>
