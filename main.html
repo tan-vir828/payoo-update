@@ -66,7 +66,7 @@
         <p>Get Bonus</p>
       </div>
 
-      <div
+      <div id="paybill-btn-box"
         class="box hover:bg-[#4B9CD3] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
         <img class="w-6 h-6" src="./assets/paybill.png" alt="">
         <p>Pay Bill</p>
@@ -189,6 +189,40 @@
         </div>
       </section>
 
+      <!-- pay bill -->
+
+      <section id="paybill" class="hidden">
+  <h2 class="font-bold mb-3">PAY Bill</h2>
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <legend>Select Department</legend>
+        <select id="bill-department" class="select">
+          <option disabled selected>Select Department</option>
+          <option value="Desco">DESCO</option>
+          <option value="Pbs">PBS</option>
+          <option value="Wasa">WASA</option>
+        </select>
+        <fieldset class="fieldset">
+          <label class="fieldset-label">Account Number</label>
+          <input id="paybill-account" type="number" maxlength="11" class="input" placeholder="Enter your account number" required />
+
+          <label class="fieldset-label">Amount</label>
+          <input id="paybill-amount" type="number" class="input" placeholder="Enter bill amount" required />
+
+          <label class="fieldset-label">PIN</label>
+          <input id="paybill-pin" type="text" maxlength="4" class="input" placeholder="Enter 4 digit pin number" required />
+
+          <button id="paybill-btn" type="submit" class="btn btn-neutral bg-blue-700 mt-4 rounded-2xl">
+            PAY THE BILL
+          </button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 
@@ -202,6 +236,7 @@
   <script src="./SCRIPT/cashout.js"></script>
   <script src="./SCRIPT/transfer.js"></script>
   <script src="./SCRIPT/bonus.js"></script>
+  <script src="./SCRIPT/paybill.js"></script>
 
 </body>
 
