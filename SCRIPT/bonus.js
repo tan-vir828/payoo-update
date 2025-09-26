@@ -11,13 +11,16 @@ document.getElementById("bonus").addEventListener("click", function (event) {
         "BONUS500": 500,
         "NEWUSER50": 50
     };
-
+     if (coupon === "") {
+        
+        return;
+    }
     if (coupons[coupon]) {
         balance += coupons[coupon];
         mainBalanceElement.innerText = balance.toFixed(2);
-        // alert(`🎉 Congrats! ${coupons[coupon]} added to your balance.`);
+        alert(`🎉 Congrats! ${coupons[coupon]} added to your balance.`);
         document.getElementById("coupon-code").value = "";
     } else {
-        alert("❌ Invalid or expired coupon!");
+        alert("❌");
     }
 });
