@@ -35,7 +35,8 @@
     <section class="m-4">
       <div class="mt-10">
         <p class="font-bold">🔥 Welcome to Payooo!</p>
-        <p class="text-stone-600 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
+        <p class="text-stone-600 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and
+        </p>
       </div>
     </section>
 
@@ -103,8 +104,8 @@
                 <label class="fieldset-label">PIN</label>
                 <input value="1234" id="pin" type="text" class="input" placeholder="type your PIN" required />
 
-                <button id="add-money" type="submit"
-                  class="btn btn-neutral bg-blue-700 mt-4 rounded-2xl">Add money</button>
+                <button id="add-money" type="submit" class="btn btn-neutral bg-blue-700 mt-4 rounded-2xl">Add
+                  money</button>
               </fieldset>
             </div>
           </div>
@@ -129,12 +130,14 @@
                 <input value="01301301302" id="Acount-nunber2" type="number" maxlength="11" class="input"
                   placeholder="type your number" required />
                 <label class="fieldset-label">Amount </label>
-                <input id="cashout-amount" type="number" maxlength="11" class="input" placeholder="Enter amount to withdraw" required />
+                <input id="cashout-amount" type="number" maxlength="11" class="input"
+                  placeholder="Enter amount to withdraw" required />
                 <label class="fieldset-label">PIN</label>
-                <input value="1234" id="cashout-pin" type="text" class="input" placeholder="Enter 4 digit pin number" required />
+                <input value="1234" id="cashout-pin" type="text" class="input" placeholder="Enter 4 digit pin number"
+                  required />
 
-                <button id="cash-out-btn" type="submit"
-                  class="btn btn-neutral bg-blue-700 mt-4 rounded-2xl">Withdraw Money</button>
+                <button id="cash-out-btn" type="submit" class="btn btn-neutral bg-blue-700 mt-4 rounded-2xl">Withdraw
+                  Money</button>
               </fieldset>
             </div>
           </div>
@@ -142,29 +145,53 @@
       </section>
       <!-- transfer -->
 
-      <!-- TRANSFER -->
-<section id="transfer" class="hidden">
-  <h2 class="font-bold mb-3">Transfer</h2>
-  <div class="hero-content flex-col lg:flex-row-reverse">
-    <div class="card w-full max-w-sm shrink-0 shadow-2xl">
-      <div class="card-body">
-        
-        <fieldset class="fieldset">
-          <label class="fieldset-label">Account Number</label>
-          <input value="01301301302" id="transfer-account" type="number" maxlength="11" class="input"
-            placeholder="type your number" required />
-          <label class="fieldset-label">Amount </label>
-          <input id="transfer-amount" type="number" maxlength="11" class="input" placeholder="Enter amount" required />
-          <label class="fieldset-label">PIN</label>
-          <input value="1234" id="transfer-pin" type="text" class="input" placeholder="Enter 4 digit pin number" required />
 
-          <button id="transfer-btn" type="submit"
-            class="btn btn-neutral bg-blue-700 mt-4 rounded-2xl">Send Money</button>
-        </fieldset>
-      </div>
-    </div>
-  </div>
-</section>
+      <section id="transfer" class="hidden">
+        <h2 class="font-bold mb-3">Transfer</h2>
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Account Number</label>
+                <input value="01301301302" id="transfer-account" type="number" maxlength="11" class="input"
+                  placeholder="type your number" required />
+                <label class="fieldset-label">Amount </label>
+                <input id="transfer-amount" type="number" maxlength="11" class="input" placeholder="Enter amount"
+                  required />
+                <label class="fieldset-label">PIN</label>
+                <input value="1234" id="transfer-pin" type="text" class="input" placeholder="Enter 4 digit pin number"
+                  required />
+
+                <button id="transfer-btn" type="submit" class="btn btn-neutral bg-blue-700 mt-4 rounded-2xl">Send
+                  Money</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- BONUS -->
+      <section id="bonus" class="hidden">
+        <h2 class="font-bold mb-3">Get Bonus</h2>
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Enter Coupon Code</label>
+                <input id="coupon-code" type="text" class="input" placeholder="Enter your coupon" required />
+                <button id="bonus-btn" type="submit" class="btn btn-neutral bg-green-700 mt-4 rounded-2xl">Redeem
+                  Bonus</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
 
 
     </div>
