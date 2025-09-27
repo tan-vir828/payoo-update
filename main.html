@@ -19,8 +19,8 @@
           <img class="" src="/assets/Group.png" alt="">
         </div>
 
-        <div class="flex flex-col items-start mt-4 ml-3">
-          <h1 class="font-extrabold">$ <span id="main-balance">9000</span></h1>
+        <div class="flex flex-col items-start mt-4 ml-3 ">
+          <h1 class="font-extrabold hover:text-pink-600 hover:text-opacity-80 ">$ <span id="main-balance">9000</span></h1>
           <p class="text-slate-500"> Balance</p>
         </div>
       </div>
@@ -34,48 +34,52 @@
     <!-- WELCOME -->
     <section class="m-4">
       <div class="mt-10">
-        <p class="font-bold">🔥 Welcome to Payooo!</p>
-        <p class="text-stone-600 mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and
+        <p class="font-bold">Welcome to Payooo!</p>
+        <p class="text-stone-600 mt-3">Enjoy easy and convenient financial services with us.
         </p>
+        
       </div>
+      <p class="font-bold mt-5">Our services for you</p>
     </section>
+
+    
 
     <!-- BOXES -->
     <section class="cards grid grid-cols-3 gap-3 m-3 mt-10">
       <div id="add-money-box"
-        class="box hover:bg-[#3E8EDE] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
+        class="box hover:bg-sky-200 hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
         <img class="w-6 h-6" src="./assets/add money.png" alt="">
-        <p>Add Money</p>
+        <p class="font-bold text-green-800">Add Money</p>
       </div>
 
       <div id="cash-out-box"
-        class="box hover:bg-[#40E0D0] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
+        class="box hover:bg-sky-200 hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
         <img class="w-6 h-6" src="./assets/cashout.png" alt="">
-        <p>Cashout</p>
+        <p class="font-bold text-green-800">Cashout</p>
       </div>
 
       <div id="transfer-btn-box"
-        class="box hover:bg-[#00FFFF] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
+        class="box hover:bg-sky-200 hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
         <img class="w-6 h-6" src="./assets/transfer.png" alt="">
-        <p>Transfer</p>
+        <p class="font-bold text-green-800">Transfer</p>
       </div>
 
       <div id="bonus-btn-box"
-        class="box hover:bg-[#81D8D0] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
+        class="box hover:bg-sky-200 hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
         <img class="w-6 h-6" src="./assets/bonus1.png" alt="">
-        <p>Get Bonus</p>
+        <p class="font-bold text-green-800">Get Bonus</p>
       </div>
 
       <div id="paybill-btn-box"
-        class="box hover:bg-[#4B9CD3] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
+        class="box hover:bg-sky-200 hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
         <img class="w-6 h-6" src="./assets/paybill.png" alt="">
-        <p>Pay Bill</p>
+        <p class="font-bold text-green-800">Pay Bill</p>
       </div>
 
       <div
-        class="box hover:bg-[#1ca9c9] hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
+        class="box hover:bg-sky-200 hover:scale-105 transition-all duration-300 cursor-pointer border-2 border-green-800 p-4 flex flex-col items-center justify-center rounded-lg">
         <img class="w-6 h-6" src="./assets/transaction1.png" alt="">
-        <p>Transactions</p>
+        <p class="font-bold text-green-800">Transactions</p>
       </div>
     </section>
 
@@ -84,7 +88,7 @@
 
       <!-- ADD MONEY -->
       <section id="addmoney">
-        <h2 class="font-bold mb-3">Add Money</h2>
+        <h2 class="font-bold mb-3 m-4">Add Money</h2>
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="card w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
@@ -114,7 +118,7 @@
 
       <!-- CASHOUT -->
       <section id="cashout" class="hidden">
-        <h2 class="font-bold mb-3">Cashout</h2>
+        <h2 class="font-bold mb-3 m-4">Cashout</h2>
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="card w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
@@ -147,7 +151,7 @@
 
 
       <section id="transfer" class="hidden">
-        <h2 class="font-bold mb-3">Transfer</h2>
+        <h2 class="font-bold mb-3 m-4">Transfer</h2>
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="card w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
@@ -174,7 +178,7 @@
 
       <!-- BONUS -->
       <section id="bonus" class="hidden">
-        <h2 class="font-bold mb-3">Get Bonus</h2>
+        <h2 class="font-bold mb-3 m-4">Get Bonus</h2>
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="card w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
@@ -192,7 +196,7 @@
       <!-- pay bill -->
 
       <section id="paybill" class="hidden">
-        <h2 class="font-bold mb-3">PAY Bill</h2>
+        <h2 class="font-bold mb-3 m-4">PAY Bill</h2>
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="card w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
